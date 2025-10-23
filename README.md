@@ -154,4 +154,4 @@ http://<raspberrypi-ip>/weewx/
 
 ## 📜 License
 
-MIT License © 2025 [Your Name]. See [LICENSE](LICENSE) for full details.
+MIT License © 2025 KF6UFO. See [LICENSE](LICENSE) for full details.
