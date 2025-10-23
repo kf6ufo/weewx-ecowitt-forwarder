@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# ecowitt_relay.py
+# ecowitt-forwarder.py
 #
 # Lightweight Ecowitt -> WeeWX Interceptor relay (no Flask, no Docker).
 # Listens on /data/report and forwards the same params to Interceptor.
