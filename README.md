@@ -27,7 +27,7 @@ A lightweight Python bridge that lets Ecowitt weather consoles (HP2551, HP3501, 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<yourusername>/weewx-ecowitt-forwarder.git
+git clone https://github.com/kf6ufo/weewx-ecowitt-forwarder.git
 cd weewx-ecowitt-forwarder
 ```
 
@@ -98,9 +98,9 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=jerry
+User=username
 WorkingDirectory=/home/jerry/dev/weewx-ecowitt-forwarder
-ExecStart=/usr/bin/python3 /home/jerry/dev/weewx-ecowitt-forwarder/ecowitt-forwarder.py
+ExecStart=/usr/bin/python3 /home/username/dev/weewx-ecowitt-forwarder/ecowitt-forwarder.py
 Restart=always
 RestartSec=2
 NoNewPrivileges=true
