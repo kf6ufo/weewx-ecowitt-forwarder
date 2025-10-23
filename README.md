@@ -72,6 +72,23 @@ On the console (HP2551, WS2910, etc.), set the Customized Upload destination:
 
 Save the configuration and reboot the console if necessary.
 
+If your weather station is located at a significantly higher or lower elevation, you may need to adjust the barometric pressure limits in `weewx.conf`. WeeWX performs quality-control checks using the `[StdQC]` → `[[MinMax]]` settings, and extreme elevations can cause the reported relative or absolute pressure values to fall outside the default `inHg` range. When this happens WeeWX will log validation errors and may reject packets until the limits are widened. Update the pressure ranges to suit your elevation, for example:
+
+```
+[StdQC]
+    [[MinMax]]
+        barometer = 24.0, 34.5, inHg
+        pressure = 15, 34.5, inHg
+        outTemp = -40, 120, degree_F
+        inTemp = 10, 120, degree_F
+        outHumidity = 0, 100
+        inHumidity = 0, 100
+        windSpeed = 0, 120, mile_per_hour
+        rain = 0, 10, inch
+```
+
+Adjust the minimum and maximum values to match the realistic range for your site, then restart WeeWX so the new thresholds take effect.
+
 ### 4. Run the forwarder manually
 
 ```bash
