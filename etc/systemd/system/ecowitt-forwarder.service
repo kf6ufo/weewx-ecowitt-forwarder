@@ -5,9 +5,9 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=jerry
-WorkingDirectory=/home/jerry/dev/ecowitt-forwarder
-ExecStart=/usr/bin/python3 /home/jerry/dev/ecowitt-forwarder/ecowitt-forwarder.py
+User=username
+WorkingDirectory=/home/username/dev/ecowitt-forwarder
+ExecStart=/usr/bin/python3 /home/username/dev/ecowitt-forwarder/ecowitt-forwarder.py
 Restart=always
 RestartSec=2
 NoNewPrivileges=true
