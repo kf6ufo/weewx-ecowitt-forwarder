@@ -116,7 +116,7 @@ Wants=network-online.target
 [Service]
 Type=simple
 User=username
-WorkingDirectory=/home/jerry/dev/weewx-ecowitt-forwarder
+WorkingDirectory=/home/username/dev/weewx-ecowitt-forwarder
 ExecStart=/usr/bin/python3 /home/username/dev/weewx-ecowitt-forwarder/ecowitt-forwarder.py
 Restart=always
 RestartSec=2
