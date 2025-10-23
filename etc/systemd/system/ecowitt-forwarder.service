@@ -1,0 +1,18 @@
+[Unit]
+Description=Ecowitt → WeeWX Interceptor Forwarder
+After=network-online.target weewx.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=jerry
+WorkingDirectory=/home/jerry/dev/ecowitt-forwarder
+ExecStart=/usr/bin/python3 /home/jerry/dev/ecowitt-forwarder/ecowitt-forwarder.py
+Restart=always
+RestartSec=2
+NoNewPrivileges=true
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
