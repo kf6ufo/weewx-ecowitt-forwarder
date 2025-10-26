@@ -73,7 +73,7 @@ On the console (HP2551, WS2910, etc.), set the Customized Upload destination:
 | Server IP / Domain   | `http://<raspberrypi-ip>`      |
 | Port                 | `8080`                         |
 | Path                 | `/data/report/`                |
-| Upload Interval      | `300` seconds (or as desired)  |
+| Upload Interval      | `150` seconds (or as desired)  |
 
 Save the configuration and reboot the console if necessary.
 
