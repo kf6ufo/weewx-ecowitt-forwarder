@@ -32,6 +32,11 @@ cd weewx-ecowitt-forwarder
 ```
 
 ### 2. Configure WeeWX
+Add the weewx-interceptor
+
+```bash
+sudo weectl extension install weewx-interceptor.zip
+```
 
 Edit `/etc/weewx/weewx.conf` to use the Interceptor driver:
 
